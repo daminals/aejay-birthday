@@ -26,7 +26,7 @@ async def on_ready():
     print('bot.py is active')
 
 
-global_speed = 60
+global_speed = 60*60
 
 
 @bot.event
