@@ -42,7 +42,7 @@ async def on_message(message):
             emoji2 = '🎉'
             await message.add_reaction(emoji)
             await message.add_reaction(emoji2)
-        if 'happy birthday' in message.content.lower():
+        if ('happy birthday' in message.content.lower()) and not(message.author.bot):
             await message.channel.send('Happy Birthday! 🥳🎉')
         if random.randint(0, 100) > 99:
             await message.channel.send('Happy Birthday! 🥳🎉')
