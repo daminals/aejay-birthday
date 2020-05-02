@@ -50,6 +50,8 @@ async def on_message(message):
             if not message.author.bot:
                 await message.add_reaction("🤡")
                 await message.channel.send('LMAO SIMP!!')
+    await bot.process_commands(message)
+
 
 
 @bot.command(name='speed')
